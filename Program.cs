@@ -18,13 +18,13 @@ namespace NumberGuesser
             int min;
             while (!int.TryParse(Console.ReadLine(), out min))
             {
-                Console.WriteLine("It needs to be a number, monke brain..");
+                Console.WriteLine("It will need to be a number...");
             }
             int max;
             Console.WriteLine("And max?: ");
             while (!int.TryParse(Console.ReadLine(), out max))
             {
-                Console.WriteLine("stoopid. try again");
+                Console.WriteLine("It will need to be a number... Try again");
             }
 
             int targetNum = r.Next(min, max+1);
